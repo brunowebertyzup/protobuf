@@ -2,8 +2,7 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "br.com.zupacademy";
-option java_outer_classname = "Protobuf";
-option objc_class_prefix = "HLW";
+option java_outer_classname = "FuncionarioServiceOuterClass";
 
 package br.com.zupacademy;
 
@@ -34,7 +33,7 @@ message FuncionarioRequest {
     string cep = 2;
     string complemento = 3;
   }
-  repeated string enderecos = 7;
+  repeated Endereco enderecos = 7;
 }
 
 message FuncionarioResponse {
